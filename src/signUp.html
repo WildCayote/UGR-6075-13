@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="icon" type="image/x-icon" href="static/img/logoFavIc.ico">
+</head>
+<body>
+
+    <h1>Create an Account</h1>
+    <p>It looks like you are new here. We need a bit of information to create your account.</p>
+    <p>Already have an account? <span><a href="signIn.html">Login to get started</a></span></p>
+    
+    <form action="post">
+        <label for="email">Email address</label>
+        <input type="text" name="email" id="email">
+        <br>
+        <label for="uname">User name</label>
+        <input type="text" name="uname" id="uname">
+        <br>
+        <label for="favTeam">Favorite Team</label>
+        <select name="teams" id="teams">
+            <option value="Arsenal">Arsenal</option>
+            <option value="Aston Villa">Aston Villa</option>
+            <option value="Bournemouth">Bournemouth</option>
+            <option value="Brentford F.C.">Brentford F.C.</option>
+            <option value="Brighton & Hove Albion">Brighton & Hove Albion</option>
+            <option value="Chelsea F.C.">Chelsea F.C.</option>
+            <option value="Crystal Palace">Crystal Palace</option>
+            <option value="Everton">Everton</option>
+            <option value="Fulham F.C.">Fulham F.C.</option>
+            <option value="Leeds United F.C.">Leeds United F.C.</option>
+            <option value="Leicester City F.C.">Leicester City F.C.</option>
+            <option value="Liverpool F.C.">Liverpool F.C.</option>
+            <option value="Manchester City">Manchester City</option>
+            <option value="Manchester United">Manchester United</option>
+            <option value="Newcastle United">Newcastle United</option>
+            <option value="Nottingham Forest F.C.">Nottingham Forest F.C.</option>
+            <option value="Southampton">Southampton</option>
+            <option value="Tottenham Hotspur">Tottenham Hotspur</option>
+            <option value="West Ham United">West Ham United</option>
+            <option value="Wolverhampton Wanderers">Wolverhampton Wanderers</option>
+        </select>
+        <br>
+        <label for="bday">Birth date</label>
+        <input type="number" name="date" id="date" placeholder="DD" >
+        <input type="number" name="month" id="month" placeholder="MM">
+        <input type="number" name="year" id="year" placeholder="YY">
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name = "password" id = "password">
+        <br>
+        <label for="confPass">Confirm Password</label>
+        <input type="password" name = "confPass" id = "confPass">
+        <br>
+        <button type="button">Create Account</button>
+    </form>
+
+    <footer>
+        <a href="contactUs.html">Contact Us</a>
+        <a href="aboutUs.html">About Us</a>
+        <p> <span>&copy;</span> Copyright Tikvah-Ethiopia. All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
