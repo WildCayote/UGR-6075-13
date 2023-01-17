@@ -6,35 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="static/img/logo.jpg">
-
+    <link rel="stylesheet" href="css/home.css">
 </head>
 <body>
-    <header>
 
-        <img src="static/img/logo.jpg" alt="Tikvah Ethiopia's Logo">
-        <nav>
+    <header class = "header">
+        <img src="static/img/logoNBG.png" class="header__logo" alt="Tikvah Ethiopia's Logo">
+        <nav class="header__navigation">
             <ul>
-                <li><a href="homePage.html">Home</a></li>
+                <li><a href="homePage.html" class = "navigation--active" >Home</a></li>
                 <li><a href="transfers.html">Transfers</a></li>
                 <li><a href="leaguePage.html">League</a></li>
                 <li><a href="highLightsAndPodcasts.html">Highlihts & Podcasts</a></li>
             </ul>    
         </nav>
-
     </header>
 
-    <section id = "content">
-        <div id="pitch">
-            <img src="static/img/pitch.svg" alt="Picture of a football field to lay players" height="400px" width="400px">
-            <div id="lineup">
-                <div class="row">
+    <section class = "content">
+        
+        <div class="content__top">
+
+            <div class="top__pitch">
+                <div class="pitch__lineup">
+                    <div class="row">
                     <div class="player">
                         <img src="static/img/keeperJersey.png" alt="Manchester City Football Club Goal Keeper Jersey">
                         <p id = "name">Ederson</p>
                         <p id = "point">12</p>
                     </div>
-                </div>
-                <div class="row">
+                    </div>
+                    <div class="row">
                     <div class="player">
                         <img src="static/img/jersy.png" alt="Arsenal Football Club Jersey">
                         <p id = "name">Saliba</p>
@@ -55,8 +56,8 @@
                         <p id = "name">Gabriel</p>
                         <p id = "point">12</p>
                     </div>
-                </div>
-                <div class="row">
+                    </div>
+                    <div class="row">
                     <div class="player">
                         <img src="static/img/jersy2.png" alt="Newcastle Football Club Jersey">
                         <p id = "name">Almiron</p>
@@ -72,8 +73,8 @@
                         <p id = "name">Gumaries</p>
                         <p id = "point">12</p>
                     </div>
-                </div>
-                <div class="row">
+                    </div>
+                    <div class="row">
                     <div class="player">
                         <img src="static/img/jersy3.png" alt="Newcastle Football Club Jersey">
                         <p id = "name">Halland</p>
@@ -89,19 +90,17 @@
                         <p id = "name">Mahrez</p>
                         <p id = "point">12</p>
                     </div>
+                    </div>
                 </div>
-            </div>
+                <p class="subs__title">Substitutions</p>
+                <div class="pitch__subs">
 
-            <div id="subs">
-                <b>Substitutes</b>
-                <div id="keeper">
                     <div class="player">
                         <img src="static/img/keeperJersey2.png" alt="Nottingham Forrest Football Club Goal Keeper Jersey">
                         <p id = "name">Henderson</p>
                         <p id = "point">2</p>
                     </div>
-                </div>
-                <div id="outfield">
+
                     <div class="player">
                         <img src="static/img/jersy4.png" alt="Nottingham Forrest Football Club Goal Keeper Jersey">
                         <p id = "name">Mee</p>
@@ -117,91 +116,92 @@
                         <p id = "name">Hendric</p>
                         <p id = "point">34</p>
                     </div>
+                    
                 </div>
             </div>
+            <section class="top__info">
+                <div class = "info__user">
+                    <h3>Full Name</h3>
+                    <h1>User Name</h1>
+                    <table>
+                        <tr>
+                            <td>Overall Points</td>
+                            <td>100</td>
+                        </tr>
+                        <tr>
+                            <td>Overall Ranking</td>
+                            <td>1,230</td>
+                        </tr>
+                        <tr>
+                            <td>Total Players</td>
+                            <td>170,000</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="info__options">
+                    <form>
+                        <select name="gameWeek" id="gameWeek">
+                            <option value="1">Game Week 1</option>
+                            <option value="2">Game Week 2</option>
+                            <option value="3">Game Week 3</option>
+                            <option value="4">Game Week 4</option>
+                            <option value="5">Game Week 5</option>
+                            <option value="6">Game Week 6</option>
+                            <option value="7">Game Week 7</option>
+                            <option value="8">Game Week 8</option>
+                            <option value="9">Game Week 9</option>
+                            <option value="11">Game Week 10</option>
+                            <option value="12">Game Week 12</option>
+                            <option value="13">Game Week 13</option>
+                            <option value="14">Game Week 14</option>
+                            <option value="15">Game Week 15</option>
+                            <option value="16">Game Week 16</option>
+                            <option value="17">Game Week 17</option>
+                            <option value="18">Game Week 18</option>
+                            <option value="19">Game Week 19</option>
+                            <option value="20">Game Week 20</option>
+                            <option value="21">Game Week 21</option>
+                            <option value="22">Game Week 22</option>
+                            <option value="23">Game Week 23</option>
+                            <option value="24">Game Week 24</option>
+                            <option value="25">Game Week 25</option>
+                            <option value="26">Game Week 26</option>
+                            <option value="27">Game Week 27</option>
+                            <option value="28">Game Week 28</option>
+                            <option value="29">Game Week 29</option>
+                            <option value="30">Game Week 30</option>
+                            <option value="31">Game Week 31</option>
+                            <option value="32">Game Week 32</option>
+                            <option value="33">Game Week 33</option>
+                            <option value="34">Game Week 34</option>
+                            <option value="35">Game Week 35</option>
+                            <option value="36">Game Week 36</option>
+                            <option value="37">Game Week 37</option>
+                            <option value="38">Game Week 38</option>
+                        </select>
+                    </form>
+    
+                    <table>
+                        <tr>
+                            <td>Gameweek Points</td>
+                            <td>32</td>
+                        </tr>
+                        <tr>
+                            <td>Gameweek Rank</td>
+                            <td>2,000</td>
+                        </tr>
+                        <tr>
+                            <td>Gameweek Players</td>
+                            <td>170,000</td>
+                        </tr>
+                    </table>
+    
+                </div>
+                <button class="options__logout" onclick="out()">Log Out</button>
+            </section>
         </div>
-
-        <section id="info">
-            <div id = "userInfo">
-                <h3>Full Name</h3>
-                <h1>User Name</h1>
-                <table>
-                    <tr>
-                        <td>Overall Points</td>
-                        <td>100</td>
-                    </tr>
-                    <tr>
-                        <td>Overall Ranking</td>
-                        <td>1,230</td>
-                    </tr>
-                    <tr>
-                        <td>Total Players</td>
-                        <td>170,000</td>
-                    </tr>
-                </table>
-            </div>
-            <div id="options">
-                <form>
-                    <select name="gameWeek" id="gameWeek">
-                        <option value="1">Game Week 1</option>
-                        <option value="2">Game Week 2</option>
-                        <option value="3">Game Week 3</option>
-                        <option value="4">Game Week 4</option>
-                        <option value="5">Game Week 5</option>
-                        <option value="6">Game Week 6</option>
-                        <option value="7">Game Week 7</option>
-                        <option value="8">Game Week 8</option>
-                        <option value="9">Game Week 9</option>
-                        <option value="11">Game Week 10</option>
-                        <option value="12">Game Week 12</option>
-                        <option value="13">Game Week 13</option>
-                        <option value="14">Game Week 14</option>
-                        <option value="15">Game Week 15</option>
-                        <option value="16">Game Week 16</option>
-                        <option value="17">Game Week 17</option>
-                        <option value="18">Game Week 18</option>
-                        <option value="19">Game Week 19</option>
-                        <option value="20">Game Week 20</option>
-                        <option value="21">Game Week 21</option>
-                        <option value="22">Game Week 22</option>
-                        <option value="23">Game Week 23</option>
-                        <option value="24">Game Week 24</option>
-                        <option value="25">Game Week 25</option>
-                        <option value="26">Game Week 26</option>
-                        <option value="27">Game Week 27</option>
-                        <option value="28">Game Week 28</option>
-                        <option value="29">Game Week 29</option>
-                        <option value="30">Game Week 30</option>
-                        <option value="31">Game Week 31</option>
-                        <option value="32">Game Week 32</option>
-                        <option value="33">Game Week 33</option>
-                        <option value="34">Game Week 34</option>
-                        <option value="35">Game Week 35</option>
-                        <option value="36">Game Week 36</option>
-                        <option value="37">Game Week 37</option>
-                        <option value="38">Game Week 38</option>
-                    </select>
-                </form>
-
-                <table>
-                    <tr>
-                        <td>Gameweek Points</td>
-                        <td>32</td>
-                    </tr>
-                    <tr>
-                        <td>Gameweek Rank</td>
-                        <td>2,000</td>
-                    </tr>
-                    <tr>
-                        <td>Gameweek Players</td>
-                        <td>170,000</td>
-                    </tr>
-                </table>
-
-            </div>
-        </section>
-
-        <section id="fixtures">
+        
+        <section class="content__fixtures">
             <h1>Fixtures</h1>
             <form>
                 <select name="gameWeek" id="gameWeek">
@@ -245,52 +245,55 @@
                 </select>
             </form>
             <div class="fixture">
-                <div id="homeTeam">                
+                <div class="fixture__homeTeam">                
                     <img src="static/img/teamLogo1.png" alt="Team 1 Logo">
                     <p id>Brentford</p>
                 </div>
                 <div id="score">
                     2 - 2
                 </div>
-                <div id="awayTeam">
+                <div class="fixture__awayTeam">
                     <p>Tottenham</p>                
                     <img src="static/img/teamLogo2.png" alt="Team 2 Logo">
                 </div>
             </div>
             <div class="fixture">
-                <div id="homeTeam">                
+                <div class="fixture__homeTeam">                
                     <img src="static/img/teamLogo3.png" alt="Team 1 Logo">
                     <p id>Crystal Palace</p>
                 </div>
                 <div id="score">
                     0 - 0
                 </div>
-                <div id="awayTeam">
+                <div class="fixture__awayTeam">
                     <p>Fulham FC</p>                
                     <img src="static/img/teamLogo4.png" alt="Team 2 Logo">
                 </div>
             </div>            
             <div class="fixture">
-                <div id="homeTeam">                
+                <div class="fixture__homeTeam">                
                     <img src="static/img/teamLogo5.png" alt="Team 1 Logo">
                     <p id>Everton</p>
                 </div>
                 <div id="score">
                     2 - 0
                 </div>
-                <div id="awayTeam">
+                <div class="fixture__awayTeam">
                     <p>Newcastle FC</p>                
                     <img src="static/img/teamLogo6.png" alt="Team 2 Logo">
                 </div>
             </div>                   
         </section>
-    </section>
 
-    <footer>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="aboutUs.html">About Us</a>
+    </section>
+    
+    <footer class="footer">
+        <div class="footer__navigation">
+            <a href="contactUs.html">Contact Us</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
         <p> <span>&copy;</span> Copyright Tikvah-Ethiopia. All Rights Reserved</p>
     </footer>
-
+    <script src="js/signIn.js"></script>
 </body>
 </html>
