@@ -31,5 +31,5 @@ function create(){
 
 
 function out(){
-    window.location.assign("signIn.html")
+    window.location.assign("index.html")
 }
