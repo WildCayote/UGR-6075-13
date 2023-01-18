@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="img/logoFavIc.ico">
+    <link rel="stylesheet" href="css/contactUs.css">
 </head>
 <body>
 
-    <header>
-        <img src="static/img/logo.jpg" alt="Tikvah Ethiopia's Logo">
-        <nav>
+    <header class = "header">
+        <img src="static/img/logoNBG.png" class="header__logo" alt="Tikvah Ethiopia's Logo">
+        <nav class="header__navigation">
             <ul>
                 <li><a href="homePage.html">Home</a></li>
                 <li><a href="transfers.html">Transfers</a></li>
@@ -21,37 +22,37 @@
         </nav>
     </header>
 
-    <div id="content">
-        <section id="contact">
-            <h1><em>Contact Us</em></h1>
-            <p>Addis Ababa, Ethiopia</p>
-            <p>+251 91 974 3630</p>
-            <p>Wtsegab@gmail.com</p>
+    <div class="content">
+        <section class="content__contacts">
+            <h1>Contact Us</h1>
+            <p><i class="icon icon--location"></i>Addis Ababa, Ethiopia</p>
+            <p><i class="icon icon--phone"></i>+251 91 974 3630</p>
+            <p><i class="icon icon--mail"></i>Wtsegab@gmail.com</p>
         </section>
         
-        <section id = "message">
-            <h1><em>Send Us a Message</em></h1>
-            <br>
-            <p>Your comments and messages are valuable to us here at Tikvah Fantasy Football. Drop us a message we will respond as soon as possible</p>
-            <br>
+        <section class = "content__message">
+
+            <div class="message__text">
+                <h1>Send Us a Message</h1>
+                <p>Your comments and messages are valuable to us here at Tikvah Fantasy Football. Drop us a message we will respond as soon as possible</p>    
+            </div>
+
             <form action="post">
                 <input type="text" name="name" id="name" placeholder = "Your Name">
-                <br>
                 <input type="text" name="email" id="email" placeholder = "Your Email">
-                <br>
                 <input type="text" name="phone" id="phone" placeholder = "Your Phone number">
-                <br>
                 <textarea placeholder="Message"></textarea>
-                <br>
                 <button type="button">Submit Message</button>
             </form>    
         </section>
         
     </div>
 
-    <footer>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="aboutUs.html">About Us</a>
+    <footer class="footer">
+        <div class="footer__navigation">
+            <a href="contactUs.html">Contact Us</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
         <p> <span>&copy;</span> Copyright Tikvah-Ethiopia. All Rights Reserved</p>
     </footer>
 </body>
