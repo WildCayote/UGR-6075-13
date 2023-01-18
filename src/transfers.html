@@ -6,29 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="static/img/logo.jpg">
-
+    <link rel="stylesheet" href="css/transfers.css">
 </head>
 <body>
-    <header>
+    <div class="player__details" style="display: none;">
+        <div class="details__center" >
+            
+            <div class="details__top">
+            <img src="static/img/ederson.png" alt="Picture of a player">
+            <p class="details__name">Player Name</p>
+            </div>
 
-        <img src="static/img/logo.jpg" alt="Tikvah Ethiopia's Logo">
-        <nav>
+            <button class="details__sell">Sell Player</button>
+        
+        </div>
+    </div>
+
+    <header class = "header">
+        <img src="static/img/logoNBG.png" class="header__logo" alt="Tikvah Ethiopia's Logo">
+        <nav class="header__navigation">
             <ul>
-                <li><a href="homePage.html">Home</a></li>
-                <li><a href="transfers.html">Transfers</a></li>
+                <li><a href="homePage.html" >Home</a></li>
+                <li><a href="transfers.html" class = "navigation--active">Transfers</a></li>
                 <li><a href="leaguePage.html">League</a></li>
                 <li><a href="highLightsAndPodcasts.html">Highlihts & Podcasts</a></li>
             </ul>    
         </nav>
-
     </header>
 
-    <section id = "content">
+    <section class = "content">
         
-        <div id="pitch">
-            <img src="static/img/pitch.svg" alt="Picture of a football field to lay players" height="400px" width="400px">
-            <div id="lineup">
-                <div class="row">
+            <div class="content__pitch">
+            <div class="pitch__lineup">
+                <div class="lineup__row">
                     <div class="player">
                         <img src="static/img/keeperJersey.png" alt="Manchester City Football Club Goal Keeper Jersey">
                         <p id = "name">Ederson</p>
@@ -40,7 +50,7 @@
                         <p id = "point">2</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="lineup__row">
                     <div class="player">
                         <img src="static/img/jersy.png" alt="Arsenal Football Club Jersey">
                         <p id = "name">Saliba</p>
@@ -67,7 +77,7 @@
                         <p id = "point">2</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="lineup__row">
                     <div class="player">
                         <img src="static/img/jersy4.png" alt="Nottingham Forrest Football Club Goal Keeper Jersey">
                         <p id = "name">Brooks</p>
@@ -94,7 +104,7 @@
                         <p id = "point">12</p>
                     </div>
                 </div>
-                <div class="row">
+                <div class="lineup__row">
                     <div class="player">
                         <img src="static/img/jersy3.png" alt="Newcastle Football Club Jersey">
                         <p id = "name">Halland</p>
@@ -112,42 +122,48 @@
                     </div>
                 </div>
             </div>
-        </div>
-
-        <section id = "transferInfo">
-            <div>
-                <div class="row">
-                    Free Transfers: <span>2</span>
-                </div>
-                <div class="row">
-                    Cost: <span>2</span>
-                </div>
-                <div class="row">
-                    Bank: <span>1.5M$</span>
-                </div>
-                <div class="row">
-                    Deadline: 
-                    <div id = "deadline">
-                        <p>Gameweek 24</p>
-                        <p>17-10-22</p>
-                        <p>3:00 PM</p>
-                    </div>
-                </div>
             </div>
-            <button>Confirm Transfers</button>
-        </section>
 
-        <section id = "playerSearch">
-            <div>
+            <div class="content__options">
+                <section class = "options__transferInfo">
+                    <table>
+                        <tr>
+                            <td>Free Transfers:</td>
+                            <td>2</td>
+                        </tr>
+                        <tr>
+                            <td>Cost:</td>
+                            <td>2M$</td>
+                        </tr>
+                        <tr>
+                            <td>Bank:</td>
+                            <td>1.5M$</td>
+                        </tr>
+                        <tr>
+                            <td>Deadline</td>
+                            <td>
+                                <p>Gameweek 24</p>
+                                <p>17-10-22</p>
+                                <p>3:00 PM</p>
+                            </td>
+                        </tr>
+                    </table>
+
+                    <button>Confirm Transfers</button>
+                
+                </section>
+
+                <section class = "options__playerSearch">
                 <form>
-                    <select name="position" id="position">
+                    <div class = "playerSearch__selectors">
+                        <select name="position" id="position">
                         <option value="all">All</option>
                         <option value="frwd">Forward</option>
                         <option value="mid">Midfielder</option>
                         <option value="def">Defender</option>
                         <option value="gk">Goal Keeper</option>
-                    </select>
-                    <select name="team" id = "team">
+                        </select>
+                        <select name="team" id = "team">
                         <option value="all">All</option>
                         <option value="Arsenal">Arsenal</option>
                         <option value="Aston Villa">Aston Villa</option>
@@ -169,18 +185,22 @@
                         <option value="Tottenham Hotspur">Tottenham Hotspur</option>
                         <option value="West Ham United">West Ham United</option>
                         <option value="Wolverhampton Wanderers">Wolverhampton Wanderers</option>
-                    </select>
-                    <label for="priceSelector">Min - 0M$</label>
-                    <input type="range" min="0" max="12" value="6" id="priceSelector">
-                    <label for="priceSelector">Max - 12M$</label>
+                        </select>
+                    </div>
+                    
+                    <div class="playerSearch__price">
+                        <label for="priceSelector">Min - 0M$</label>
+                        <input type="range" min="0" max="12" value="6" id="priceSelector">
+                        <label for="priceSelector">Max - 12M$</label>
+                    </div>
                 </form>
-                <table>
-
-                    <th>
-                        <td> Player Name </td>
-                        <td> Price </td>
-                        <td> Total Points </td>
-                    </th>
+                <div class="playerSearch__result">
+                    <table>
+                    <tr>
+                        <td> <b>Player Name</b> </td>
+                        <td> <b>Price</b> </td>
+                        <td> <b>Total Points</b> </td>
+                    </tr>
                     <tr>
                         <td>Bruno Fernandes</td>
                         <td>7.5M $</td>
@@ -197,15 +217,19 @@
                         <td>70</td>
                     </tr>
 
-                </table>
+                    </table>
+                </div>
+                
+            </section>
             </div>
-        </section>
 
     </section>
 
-    <footer>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="aboutUs.html">About Us</a>
+    <footer class="footer">
+        <div class="footer__navigation">
+            <a href="contactUs.html">Contact Us</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
         <p> <span>&copy;</span> Copyright Tikvah-Ethiopia. All Rights Reserved</p>
     </footer>
 

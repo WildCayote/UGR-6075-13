@@ -6,25 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="static/img/logo.jpg">
+    <link rel="stylesheet" href="css/highLightsAndPodcasts.css">
 
 </head>
 <body>
-    <header>
 
-        <img src="static/img/logo.jpg" alt="Tikvah Ethiopia's Logo">
-        <nav>
+    <header class = "header">
+        <img src="static/img/logoNBG.png" class="header__logo" alt="Tikvah Ethiopia's Logo">
+        <nav class="header__navigation">
             <ul>
                 <li><a href="homePage.html">Home</a></li>
                 <li><a href="transfers.html">Transfers</a></li>
                 <li><a href="leaguePage.html">League</a></li>
-                <li><a href="highLightsAndPodcasts.html">Highlihts & Podcasts</a></li>
+                <li><a href="highLightsAndPodcasts.html" class = "navigation--active">Highlihts & Podcasts</a></li>
             </ul>    
         </nav>
-
     </header>
 
-    <section id="content">
-        <section id="highlights">
+    <section class="content">
+        <section class="content__highlights">
             <h1>Match Highlights</h1>
             <p>Enjoy latest highlights of this weeks premier league. We have made sure that all important actions are included so you would get a full game like experience.</p>
             <div class="highlight">
@@ -72,33 +72,43 @@
                 
         </section>
 
-        <section id="podcasts">
+        <section class="content__podcasts">
             <h1>Podcasts</h1>
             <p>We are delighted to tell you that we have a weekly podcast about upcoming Premier League games. Occasionally we invite famous news reporters on our platform and try to give extensive analysis of the upcoming games. All of our podcasts are in audio and we hope you will enjoy them.</p>
             <div class="podcast">
-                <img src="static/img/thumbnail.png" alt="Thumbnail of the podcast">
+                <img src="static/img/thumbnail2.png" alt="Thumbnail of the podcast">
                 <audio src="static/audio/podcastSample.m4a" controls></audio>
-                <em>FPL is Back - Season 2 - 10</em>
-                <p>In this podcast we will be discussing about the exciting new picks available after the January Window , and also which replacements to pick for injured Jesus</p>
+                <div class="podcast__text">
+                    <em>FPL is Back - Season 2 - 10</em>
+                    <p>In this podcast we will be discussing about the exciting new picks available after the January Window , and also which replacements to pick for injured Jesus</p>
+                </div>
             </div>
             <div class="podcast">
-                <img src="static/img/thumbnail.png" alt="Thumbnail of the podcast">
+                <img src="static/img/thumbnail2.png" alt="Thumbnail of the podcast">
                 <audio src="static/audio/podcastSample.m4a" controls></audio>
-                <em>FPL is Back - Season 2 - 10</em>
-                <p>In this podcast we will be discussing about the exciting new picks available after the January Window , and also which replacements to pick for injured Jesus</p>
+                <div class="podcast__text">
+                    <em>FPL is Back - Season 2 - 10</em>
+                    <p>In this podcast we will be discussing about the exciting new picks available after the January Window , and also which replacements to pick for injured Jesus</p>
+                </div>
             </div>
             <div class="podcast">
-                <img src="static/img/thumbnail.png" alt="Thumbnail of the podcast">
+                <img src="static/img/thumbnail2.png" alt="Thumbnail of the podcast">
                 <audio src="static/audio/podcastSample.m4a" controls></audio>
-                <em>FPL is Back - Season 2 - 10</em>
-                <p>In this podcast we will be discussing about the exciting new picks available after the January Window , and also which replacements to pick for injured Jesus</p>
+                <div class="podcast__text">
+                    <em>FPL is Back - Season 2 - 10</em>
+                    <p>In this podcast we will be discussing about the exciting new picks available after the January Window , and also which replacements to pick for injured Jesus</p>
+                </div>
             </div>
         </section>
     </section>
     
-    <footer>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="aboutUs.html">About Us</a>
+    <footer class="footer">
+        <div class="footer__navigation">
+            <a href="contactUs.html">Contact Us</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
         <p> <span>&copy;</span> Copyright Tikvah-Ethiopia. All Rights Reserved</p>
     </footer>
+
 </body>
+</html>
