@@ -6,20 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="icon" type="image/x-icon" href="static/img/logoFavIc.ico">
+    <link rel="stylesheet" href="css/signUp.css">
 </head>
 <body>
 
-    <h1>Create an Account</h1>
-    <p>It looks like you are new here. We need a bit of information to create your account.</p>
-    <p>Already have an account? <span><a href="signIn.html">Login to get started</a></span></p>
+    <div class = "content">
     
-    <form action="post">
+    <h1 class="content__header">Create an Account</h1>
+    
+    <div class="content__text">
+        <p>It looks like you are new here. We need a bit of information to create your account.</p>
+        <p>Already have an account? <span><a href="index.html">Login to get started</a></span></p>
+    </div>
+    
+    <form action="post" name = "signUp">
         <label for="email">Email address</label>
         <input type="text" name="email" id="email">
-        <br>
         <label for="uname">User name</label>
         <input type="text" name="uname" id="uname">
-        <br>
         <label for="favTeam">Favorite Team</label>
         <select name="teams" id="teams">
             <option value="Arsenal">Arsenal</option>
@@ -43,26 +47,27 @@
             <option value="West Ham United">West Ham United</option>
             <option value="Wolverhampton Wanderers">Wolverhampton Wanderers</option>
         </select>
-        <br>
         <label for="bday">Birth date</label>
+        <div class="form__birthday">
         <input type="number" name="date" id="date" placeholder="DD" >
         <input type="number" name="month" id="month" placeholder="MM">
         <input type="number" name="year" id="year" placeholder="YY">
-        <br>
+        </div>
         <label for="password">Password</label>
         <input type="password" name = "password" id = "password">
-        <br>
         <label for="confPass">Confirm Password</label>
         <input type="password" name = "confPass" id = "confPass">
-        <br>
-        <button type="button">Create Account</button>
+        <button type="button" onclick="create()">Create Account</button>
     </form>
+    </div>
 
-    <footer>
-        <a href="contactUs.html">Contact Us</a>
-        <a href="aboutUs.html">About Us</a>
+    <footer class = "footer">
+        <div class="footer__navigation">
+            <a href="contactUs.html">Contact Us</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
         <p> <span>&copy;</span> Copyright Tikvah-Ethiopia. All Rights Reserved</p>
     </footer>
-
+    <script src="js/signIn.js"></script>
 </body>
 </html>
