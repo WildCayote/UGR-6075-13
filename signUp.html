@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tikvah Fan Duel</title>
+    <link rel="icon" type="image/x-icon" href="static/img/logoFavIc.ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://drive.google.com/uc?export=view&id=1hWIpMdHyUR4q6v_MSIL048DZa-VvKWts">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> 
+</head>
+<body>
+
+    <div class = "content">
+    
+    <h1 class="content__header">Create an Account</h1>
+    
+    <div class="content__text">
+        <p>It looks like you are new here. We need a bit of information to create your account.</p>
+        <p>Already have an account? <span><a href="index.html">Login to get started</a></span></p>
+    </div>
+    
+    <form action="post" name = "signUp">
+        <label for="email">Email address</label>
+        <input type="text" name="email" id="email">
+        <label for="uname">User name</label>
+        <input type="text" name="uname" id="uname">
+        <label for="favTeam">Favorite Team</label>
+        <select name="teams" id="teams">
+            <option value="Arsenal">Arsenal</option>
+            <option value="Aston Villa">Aston Villa</option>
+            <option value="Bournemouth">Bournemouth</option>
+            <option value="Brentford F.C.">Brentford F.C.</option>
+            <option value="Brighton & Hove Albion">Brighton & Hove Albion</option>
+            <option value="Chelsea F.C.">Chelsea F.C.</option>
+            <option value="Crystal Palace">Crystal Palace</option>
+            <option value="Everton">Everton</option>
+            <option value="Fulham F.C.">Fulham F.C.</option>
+            <option value="Leeds United F.C.">Leeds United F.C.</option>
+            <option value="Leicester City F.C.">Leicester City F.C.</option>
+            <option value="Liverpool F.C.">Liverpool F.C.</option>
+            <option value="Manchester City">Manchester City</option>
+            <option value="Manchester United">Manchester United</option>
+            <option value="Newcastle United">Newcastle United</option>
+            <option value="Nottingham Forest F.C.">Nottingham Forest F.C.</option>
+            <option value="Southampton">Southampton</option>
+            <option value="Tottenham Hotspur">Tottenham Hotspur</option>
+            <option value="West Ham United">West Ham United</option>
+            <option value="Wolverhampton Wanderers">Wolverhampton Wanderers</option>
+        </select>
+        <label for="bday">Birth date</label>
+        <div class="form__birthday">
+        <input type="number" name="date" id="date" placeholder="DD" >
+        <input type="number" name="month" id="month" placeholder="MM">
+        <input type="number" name="year" id="year" placeholder="YY">
+        </div>
+        <label for="password">Password</label>
+        <input type="password" name = "password" id = "password">
+        <label for="confPass">Confirm Password</label>
+        <input type="password" name = "confPass" id = "confPass">
+        <button type="button" onclick="create()">Create Account</button>
+    </form>
+    </div>
+
+    <footer class = "footer">
+        <div class="footer__navigation">
+            <a href="contactUs.html">Contact Us</a>
+            <a href="aboutUs.html">About Us</a>
+        </div>
+        <p> <span>&copy;</span> Copyright Tikvah-Ethiopia. All Rights Reserved</p>
+    </footer>
+    <script src="signIn.js"></script>
+</body>
+</html>
